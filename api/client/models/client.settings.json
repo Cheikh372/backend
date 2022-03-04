@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "name": "client",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "commandes": {
+      "via": "client",
+      "collection": "commande"
+    }
+  }
+}

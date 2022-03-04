@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandes",
+  "info": {
+    "name": "commande",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "via": "commandes",
+      "model": "client"
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "lignes": {
+      "via": "commande",
+      "collection": "lignes"
+    }
+  }
+}

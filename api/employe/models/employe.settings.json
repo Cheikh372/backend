@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employes",
+  "info": {
+    "name": "employe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "biginteger"
+    },
+    "adresse": {
+      "type": "string"
+    }
+  }
+}

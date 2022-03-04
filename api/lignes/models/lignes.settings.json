@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lignes",
+  "info": {
+    "name": "lignes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "commande": {
+      "via": "lignes",
+      "model": "commande"
+    },
+    "pain": {
+      "model": "pain",
+      "via": "lignes"
+    },
+    "quantite": {
+      "type": "biginteger"
+    },
+    "retour": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pains",
+  "info": {
+    "name": "pain",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "libele": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "biginteger"
+    },
+    "lignes": {
+      "via": "pain",
+      "collection": "lignes"
+    }
+  }
+}
